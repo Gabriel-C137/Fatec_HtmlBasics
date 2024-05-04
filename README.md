@@ -1,6 +1,6 @@
 # Projeto para Fatec - HtmlBasics
 
-Esse projeto tem em vista construir um site para uma faculdade fictícia, contendo grandes textos, vídeo, imagens e botões interativos.
+Esse projeto tem em vista construir um site para uma faculdade ensinando tudo que você deve saber sobre HTML para construir um site web. Contendo grandes textos, diversas áreas, sidebar, vídeo, imagens, audio e botões interativos.
 
 ## 🚀 Começando
 
