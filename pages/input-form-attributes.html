@@ -5,16 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title></title>
+    <title>Atributos de Formulário para Campos de Entrada em HTML</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
         }
 
+        h3 {
+            font-size: 25px;
+        }
+
         .container {
             display: grid;
-            grid-template-columns: 550px 550px;
-            justify-content: space-around;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #ensino {
+            border: 5px double black;
+        }
+
+        #resposta {
+            border: 5px double black;
+        }
+
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+
+        #exemplo {
+            color: rgb(35, 72, 105);
         }
 
         hr {
@@ -24,18 +53,62 @@
 </head>
 
 <body>
-    <h1></h1>
+    <h1>Atributos de Formulário para Campos de Entrada em HTML</h1>
     <hr>
 
     <div class="container">
         <div id="ensino">
+            <h3>O que são Atributos de Formulário para Campos de Entrada em HTML?</h3>
+            <p>Atributos de Formulário para Campos de Entrada em HTML são propriedades que podem ser adicionadas aos elementos de entrada, como <code>&lt;input&gt;</code>, para especificar em qual formulário o campo deve ser incluído.</p>
+            <hr>
+            <p id="exemplo">Exemplo de Atributos de Formulário para Campos de Entrada em HTML:</p>
+            <form id="cadastroForm" action="/cadastro" method="post">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required maxlength="50" placeholder="Digite seu nome"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required placeholder="Digite seu email"><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+            <p>Este campo de entrada está associado ao formulário com o ID "cadastroForm".</p>
         </div>
 
-        <div>
-        </div id="resposta">
+        <div id="resposta">
+            <br>
+            Atributos de Formulário para Campos de Entrada em HTML permitem organizar e controlar os campos de entrada em diferentes formulários em uma página da web.
+            <br><br>
+        </div>
     </div>
 
+    <hr>
+    <br>
+    <h1>Atributos de Formulário para Campos de Entrada em HTML - Exemplo Prático</h1>
+    <hr>
 
+    <div class="container">
+        <div id="ensino">
+            <h3>Exemplo de Uso do Atributo <code>form</code> em HTML</h3>
+            <p>Vamos criar um formulário de login com campos de entrada para nome de usuário e senha, e um botão de envio. O campo de senha estará associado a um formulário diferente usando o atributo <code>form</code>.</p>
+            <hr>
+            <p id="exemplo">Exemplo:</p>
+            <form id="loginForm" action="/login" method="post">
+                <label for="username">Nome de Usuário:</label><br>
+                <input type="text" id="username" name="username" required><br>
+                <label for="password">Senha:</label><br>
+                <input type="password" id="password" name="password" form="signupForm" required><br><br>
+                <input type="submit" value="Login">
+            </form>
+
+            <form id="signupForm" action="/signup" method="post" style="display: none;">
+                <input type="text" name="hidden" style="display: none;">
+            </form>
+        </div>
+
+        <div id="resposta">
+            <br>
+            Neste exemplo, o campo de senha está associado ao segundo formulário (signupForm) usando o atributo <code>form</code>. Quando o usuário preenche a senha e clica em "Login", os dados do campo de senha são enviados junto com o formulário de login, garantindo uma experiência de usuário consistente.
+            <br><br>
+        </div>
+    </div>
 </body>
 
 </html>

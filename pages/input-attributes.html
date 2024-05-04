@@ -5,16 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title></title>
+    <title>Atributos de Entrada em HTML</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
         }
 
+        h3 {
+            font-size: 25px;
+        }
+
         .container {
             display: grid;
-            grid-template-columns: 550px 550px;
-            justify-content: space-around;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #ensino {
+            border: 5px double black;
+        }
+
+        #resposta {
+            border: 5px double black;
+        }
+
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+
+        #exemplo {
+            color: rgb(35, 72, 105);
         }
 
         hr {
@@ -24,17 +53,30 @@
 </head>
 
 <body>
-    <h1></h1>
+    <h1>Atributos de Entrada em HTML</h1>
     <hr>
 
     <div class="container">
         <div id="ensino">
+            <h3>O que são Atributos de Entrada em HTML?</h3>
+            <p>Atributos de Entrada em HTML são propriedades que podem ser adicionadas aos elementos de entrada, como <code>&lt;input&gt;</code>, para controlar seu comportamento e aparência. Eles oferecem uma maneira flexível de personalizar e validar os campos de entrada em um formulário.</p>
+            <hr>
+            <p id="exemplo">Exemplos de Atributos de Entrada em HTML:</p>
+            <form action="/cadastro" method="post">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required maxlength="50" placeholder="Digite seu nome"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required placeholder="Digite seu email"><br><br>
+                <input type="submit" value="Enviar">
+            </form>
         </div>
 
-        <div>
-        </div id="resposta">
+        <div id="resposta">
+            <br>
+            Atributos de Entrada em HTML oferecem uma maneira poderosa de personalizar e validar os campos de entrada em um formulário, garantindo uma melhor experiência do usuário.
+            <br><br>
+        </div>
     </div>
-
 
 </body>
 
