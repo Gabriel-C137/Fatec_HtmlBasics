@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Tag &lt;div&gt; HTML</title>
+    <title>Div em HTML - Tutorial</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
@@ -26,20 +25,7 @@
 
         #ensino {
             border: 5px double black;
-        }
-
-        #resposta {
-            border: 5px double black;
-        }
-
-        .exe {
-            display: flex;
-            justify-content: center;
-        }
-
-        #imagem {
-            width: 230px;
-            height: 230px;
+            padding: 20px;
         }
 
         #exemplo {
@@ -49,30 +35,40 @@
         hr {
             border-color: black;
         }
+
+        .div-example {
+            border: 2px solid black;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .div-example p {
+            color: blue;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Tag &lt;div&gt; HTML</h1>
+    <h1>Div em HTML - Tutorial</h1>
     <hr>
-
     <div class="container">
         <div id="ensino">
-            <h3>O que é a Tag &lt;div&gt;?</h3>
-            <p>A tag `<div>` é um elemento de bloco que é frequentemente usado como um contêiner genérico para outros elementos HTML. Ela não tem significado semântico próprio, mas é útil para agrupar e estilizar partes de uma página da web.</p>
+            <h3 style="font-size: 30px;">O que é a tag &lt;div&gt;?</h3>
+            <p>A tag `<div>` é um elemento de bloco que é usado para agrupar outros elementos HTML em uma seção específica ou para criar layouts mais complexos em uma página da web. A tag `<div>` por si só não tem nenhum significado semântico, mas é frequentemente usada em conjunto com classes ou IDs CSS para estilizar e organizar o conteúdo.</p>
             <hr>
-            <p id="exemplo">Exemplo de Uso da Tag &lt;div&gt;:</p>
-            <div style="background-color: lightblue; padding: 10px;">
-                <h4>Este é um exemplo de conteúdo dentro de uma div.</h4>
-                <p>Podemos adicionar qualquer tipo de conteúdo aqui, como texto, imagens, outras tags HTML, etc.</p>
-            </div>
+            <h3>Exemplo de Código</h3>
+            <p id="exemplo">
+                &lt;div class="div-example"&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;Este é um exemplo de conteúdo dentro de uma div.&lt;/p&gt;<br>
+                &lt;/div&gt;
+            </p>
         </div>
-
-        <div id="resposta">
-            <br>
-            A tag `<div>` é uma ferramenta poderosa para organizar e estruturar o conteúdo de uma página da web. Ela é frequentemente combinada com CSS para estilizar o layout da página.
-            <br><br>
-            </div>
+        <br>
+        <hr>
+        <h3>Exemplo de Uso da Tag &lt;div&gt;</h3>
+        <div class="div-example">
+            <p>Este é um exemplo de conteúdo dentro de uma div.</p>
+        </div>
     </div>
 </body>
 

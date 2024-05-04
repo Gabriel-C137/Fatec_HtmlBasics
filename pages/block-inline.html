@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Elementos Block e Inline HTML</title>
+    <title>Block vs Inline em HTML - Tutorial</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
@@ -26,20 +25,7 @@
 
         #ensino {
             border: 5px double black;
-        }
-
-        #resposta {
-            border: 5px double black;
-        }
-
-        .exe {
-            display: flex;
-            justify-content: center;
-        }
-
-        #imagem {
-            width: 230px;
-            height: 230px;
+            padding: 20px;
         }
 
         #exemplo {
@@ -49,32 +35,63 @@
         hr {
             border-color: black;
         }
+
+        .block {
+            display: block;
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .inline {
+            display: inline;
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin-right: 10px;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Elementos Block e Inline HTML</h1>
+    <h1>Block vs Inline em HTML - Tutorial</h1>
     <hr>
-
     <div class="container">
         <div id="ensino">
-            <h3>O que são Elementos Block e Inline HTML?</h3>
-            <p>Elementos de bloco (block) são elementos HTML que ocupam toda a largura disponível e geralmente começam em uma nova linha. Já os elementos em linha (inline) ocupam apenas o espaço necessário e não iniciam uma nova linha.</p>
+            <h3 style="font-size: 30px;">Elementos de Bloco vs Elementos Inline</h3>
+            <p>Em HTML, elementos podem ser classificados como elementos de bloco ou elementos inline, dependendo de como eles são exibidos no layout da página.</p>
             <hr>
-            <p id="exemplo">Exemplo de Elemento Block:</p>
-            <div style="background-color: lightblue;">
-                Este é um elemento de bloco.
-            </div>
-            <br>
-            <p id="exemplo">Exemplo de Elemento Inline:</p>
-            <span style="background-color: lightgreen;">Este é um elemento em linha.</span>
+            <h3>Elementos de Bloco</h3>
+            <p id="exemplo">
+                Elementos de bloco ocupam todo o espaço horizontal disponível e geralmente começam em uma nova linha. Alguns exemplos comuns de elementos de bloco são: `<div>`, `<p>`, `<h1>` - `<h6>`.
+            </p>
+            <h3>Elementos Inline</h3>
+            <p id="exemplo">
+                Elementos inline ocupam apenas o espaço necessário e não começam em uma nova linha. Alguns exemplos comuns de elementos inline são: `<span>`, `<a>`, `<strong>`, `<em>`.
+            </p>
         </div>
+        <br>
+        <hr>
+        <h3>Exemplo de Elemento de Bloco</h3>
+        <div class="block">Este é um exemplo de elemento de bloco.</div>
+        <h3>Exemplo de Elemento Inline</h3>
+        <span class="inline">Este é um exemplo de elemento inline.</span>
+        <span class="inline">Este é outro exemplo de elemento inline.</span>
+        <hr>
+        <h3>Como ajuda, usei css:</h3>
+        <pre>        
+        .block {
+            display: block;
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
 
-        <div id="resposta">
-            <br>
-            Alguns exemplos comuns de elementos de bloco incluem <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;ul&gt;</code>, enquanto exemplos de elementos em linha incluem <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code>.
-            <br><br>
-        </div>
+        .inline {
+            display: inline;
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin-right: 10px;
+        }</pre>
     </div>
 </body>
 

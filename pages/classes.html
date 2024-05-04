@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Classes HTML</title>
+    <title>Classes em HTML - Tutorial</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
@@ -26,20 +25,7 @@
 
         #ensino {
             border: 5px double black;
-        }
-
-        #resposta {
-            border: 5px double black;
-        }
-
-        .exe {
-            display: flex;
-            justify-content: center;
-        }
-
-        #imagem {
-            width: 230px;
-            height: 230px;
+            padding: 20px;
         }
 
         #exemplo {
@@ -51,35 +37,35 @@
         }
 
         .destaque {
-            background-color: lightyellow;
+            background-color: #f2f2f2;
             padding: 10px;
-            border: 2px solid orange;
-            border-radius: 5px;
+            border: 2px solid black;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 
 <body>
-    <h1>Classes HTML</h1>
+    <h1>Classes em HTML - Tutorial</h1>
     <hr>
-
     <div class="container">
         <div id="ensino">
-            <h3>O que são Classes HTML?</h3>
-            <p>Classes em HTML são atributos que podem ser adicionados a elementos HTML para estilizá-los ou aplicar comportamentos específicos.</p>
+            <h3 style="font-size: 30px;">O que são Classes em HTML?</h3>
+            <p>As classes em HTML são atributos que podem ser atribuídos a elementos HTML para aplicar estilos ou comportamentos específicos a esses elementos. Uma classe pode ser aplicada a vários elementos na mesma página.</p>
             <hr>
-            <p id="exemplo">Exemplo de Uso de Classes:</p>
-            <div class="destaque">
-                <p>Este é um exemplo de conteúdo com a classe "destaque".</p>
-                <p>Podemos aplicar diferentes estilos a elementos com a mesma classe.</p>
-            </div>
+            <h3>Exemplo de Código</h3>
+            <p id="exemplo">
+                &lt;p class="destaque"&gt;<br>
+                &nbsp;&nbsp;Este parágrafo está destacado com uma classe específica.<br>
+                &lt;/p&gt;
+            </p>
         </div>
-
-        <div id="resposta">
-            <br>
-            As classes HTML são especialmente úteis quando usadas em conjunto com CSS, permitindo estilos consistentes e reutilizáveis em uma página da web.
-            <br><br>
-        </div>
+        <br>
+        <hr>
+        <h3>Exemplo de Uso de Classes</h3>
+        <p class="destaque">
+            Este parágrafo está destacado com uma classe específica.
+        </p>
     </div>
 </body>
 

@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Semântica em HTML</title>
+    <title>IDs em HTML - Tutorial</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
@@ -26,20 +25,7 @@
 
         #ensino {
             border: 5px double black;
-        }
-
-        #resposta {
-            border: 5px double black;
-        }
-
-        .exe {
-            display: flex;
-            justify-content: center;
-        }
-
-        #imagem {
-            width: 230px;
-            height: 230px;
+            padding: 20px;
         }
 
         #exemplo {
@@ -49,32 +35,59 @@
         hr {
             border-color: black;
         }
+
+        #content {
+            background-color: #f2f2f2;
+            padding: 10px;
+            border: 2px solid black;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Semântica em HTML</h1>
-    <hr>
 
+    <h1>Elementos de Semântica?</h1>
+    <hr>
     <div class="container">
         <div id="ensino">
-            <h3>O que é Semântica em HTML?</h3>
-            <p>A semântica em HTML refere-se à utilização apropriada de elementos HTML para descrever o conteúdo de uma página da web de forma significativa para os navegadores e motores de busca.</p>
+            <h3 style="font-size: 30px;">O que são Elementos Semânticos?</h3>
+            <p>Um elemento semântico descreve claramente seu significado tanto para o navegador quanto para o desenvolvedor.</p>
             <hr>
-            <p id="exemplo">Exemplo de Uso de Semântica:</p>
-            <article>
-                <h2>Título do Artigo</h2>
-                <p>Este é um artigo sobre semântica em HTML.</p>
-            </article>
+            <h3>Exemplos de Elementos Não Semânticos:</h3>
+            <p>&lt;div&gt; e &lt;span&gt; - Não descrevem nada sobre seu conteúdo.</p>
+            <h3>Exemplos de Elementos Semânticos:</h3>
+            <p>&lt;form&gt;, &lt;table&gt; e &lt;article&gt; - Definem claramente seu conteúdo.</p>
         </div>
-
-        <div id="resposta">
-            <br>
-            Utilizar elementos HTML de forma semântica melhora a acessibilidade, a indexação pelos motores de busca e a compreensão do conteúdo por parte dos desenvolvedores e usuários da web.
-            <br><br>
-        </div>
+        <br>
+        <hr>
+        <h3>Elementos Semânticos em HTML</h3>
+        <p>Muitos sites contêm código HTML como: &lt;div id="nav"&gt;, &lt;div class="header"&gt;, &lt;div id="footer"&gt; para indicar navegação, cabeçalho e rodapé. No HTML, existem alguns elementos semânticos que podem ser usados para definir diferentes partes de uma página web:</p>
+        <ul>
+            <li>&lt;article&gt;</li>
+            <li>&lt;aside&gt;</li>
+            <li>&lt;details&gt;</li>
+            <li>&lt;figcaption&gt;</li>
+            <li>&lt;figure&gt;</li>
+            <li>&lt;footer&gt;</li>
+            <li>&lt;header&gt;</li>
+            <li>&lt;main&gt;</li>
+            <li>&lt;mark&gt;</li>
+            <li>&lt;nav&gt;</li>
+            <li>&lt;section&gt;</li>
+            <li>&lt;summary&gt;</li>
+            <li>&lt;time&gt;</li>
+        </ul>
+        <p>Um elemento &lt;section&gt; define uma seção em um documento. Segundo a documentação HTML da W3C: "Uma seção é um agrupamento temático de conteúdo, normalmente com um cabeçalho".</p>
+        <p>Exemplos de onde um elemento &lt;section&gt; pode ser usado:</p>
+        <ul>
+            <li>Capítulos</li>
+            <li>Introdução</li>
+            <li>Itens de notícias</li>
+            <li>Informações de contato</li>
+        </ul>
+        <p>Uma página da web normalmente poderia ser dividida em seções para introdução, conteúdo e informações de contato.</p>
     </div>
-
 </body>
 
 </html>

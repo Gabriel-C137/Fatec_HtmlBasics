@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>JavaScript no HTML</title>
+    <title>JavaScript em HTML - Tutorial</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
@@ -26,10 +25,12 @@
 
         #ensino {
             border: 5px double black;
+            padding: 20px;
         }
 
         #resposta {
             border: 5px double black;
+            padding: 20px;
         }
 
         .exe {
@@ -53,24 +54,36 @@
 </head>
 
 <body>
-    <h1>JavaScript no HTML</h1>
+    <h1>JavaScript em HTML - Tutorial</h1>
     <hr>
 
     <div class="container">
         <div id="ensino">
-            <h3>O que é JavaScript no HTML?</h3>
-            <p>O JavaScript embutido em HTML permite adicionar scripts diretamente no código HTML, o que pode ser útil para realizar tarefas simples, como manipulação do DOM (Modelo de Objeto do Documento) ou execução de funções específicas.</p>
+            <h3>O que é JavaScript?</h3>
+            <p>O JavaScript é uma linguagem de programação amplamente utilizada para criar interatividade em páginas web. Com JavaScript, você pode fazer coisas como validar formulários, criar efeitos visuais dinâmicos, manipular dados em tempo real e muito mais.</p>
             <hr>
-            <p id="exemplo">Exemplo de JavaScript no HTML:</p>
-            <button onclick="alert('Olá, mundo!')">Clique aqui</button>
+            <p id="exemplo">Exemplo de JavaScript:</p>
+            <p>Clique no botão para exibir uma mensagem:</p><br>
+            &lt;button onclick="mostrarMensagem()">Clique Aqui&lt;/button><br>
+            &lt;script><br>
+                function mostrarMensagem() {<br>
+                    alert("Olá! Este é um exemplo de mensagem em JavaScript.");<br>
+                }<br>
+                &lt;/script><br>
             <br><br>
         </div>
 
         <div id="resposta">
-            O JavaScript embutido em HTML é uma maneira rápida e conveniente de adicionar interatividade a uma página da web, mas é mais comum separar o código JavaScript em arquivos externos para facilitar a manutenção e o gerenciamento do código.
+            <p>Clique no botão para exibir uma mensagem:</p>
+            <button onclick="mostrarMensagem()">Clique Aqui</button>
+            <script>
+                function mostrarMensagem() {
+                    alert("Olá! Este é um exemplo de mensagem em JavaScript.");
+                }
+            </script>
+            <br><br>
         </div>
     </div>
-
 </body>
 
 </html>

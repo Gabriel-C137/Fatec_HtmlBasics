@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Tabelas HTML</title>
+    <title>Tabelas em HTML - Tutorial</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
@@ -26,10 +25,12 @@
 
         #ensino {
             border: 5px double black;
+            padding: 20px;
         }
 
         #resposta {
             border: 5px double black;
+            padding: 20px;
         }
 
         .exe {
@@ -41,9 +42,6 @@
             width: 230px;
             height: 230px;
         }
-        table, tr,td,th {
-            border: 3px solid black;
-        }
 
         #exemplo {
             color: rgb(35, 72, 105);
@@ -52,58 +50,78 @@
         hr {
             border-color: black;
         }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Tabelas HTML</h1>
+    <h1>Tabelas em HTML - Tutorial</h1>
     <hr>
-
     <div class="container">
         <div id="ensino">
-            <h3>O que são Tabelas HTML?</h3>
-            <p>Tabelas HTML são elementos utilizados para organizar dados em linhas e colunas.</p>
+            <h3 style="font-size: 30px;">Como Criar Tabelas em HTML</h3>
+            <p>O elemento HTML `<table>` é usado para criar tabelas em uma página da web. Aqui está um exemplo básico de como criar uma tabela:</p>
             <hr>
-            <p id="exemplo">Exemplo:</p>
-            <table>
-                <tr>
-                    <th>Nome</th>
-                    <th>Idade</th>
-                </tr>
-                <tr>
-                    <td>João</td>
-                    <td>25</td>
-                </tr>
-                <tr>
-                    <td>Maria</td>
-                    <td>30</td>
-                </tr>
-            </table>
             <br>
-            <p id="exemplo">Outro Exemplo:</p>
-            <table>
-                <tr>
-                    <th>Produto</th>
-                    <th>Preço</th>
-                </tr>
-                <tr>
-                    <td>Camisa</td>
-                    <td>R$ 30,00</td>
-                </tr>
-                <tr>
-                    <td>Calça</td>
-                    <td>R$ 50,00</td>
-                </tr>
-            </table>
+            <h3>Exemplo de Código</h3>
+            <p id="exemplo">
+                &lt;table&gt;<br>
+                &nbsp;&nbsp;&lt;tr&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Nome&lt;/th&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Idade&lt;/th&gt;<br>
+                &nbsp;&nbsp;&lt;/tr&gt;<br>
+                &nbsp;&nbsp;&lt;tr&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;João&lt;/td&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;30&lt;/td&gt;<br>
+                &nbsp;&nbsp;&lt;/tr&gt;<br>
+                &nbsp;&nbsp;&lt;tr&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Maria&lt;/td&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;25&lt;/td&gt;<br>
+                &nbsp;&nbsp;&lt;/tr&gt;<br>
+                &lt;/table&gt;
+            </p>
         </div>
-
-        <div id="resposta">
-            <br>
-            Uma tabela HTML é composta por elementos como <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code> (linha), <code>&lt;th&gt;</code> (cabeçalho da tabela) e <code>&lt;td&gt;</code> (célula da tabela).
-            <br><br>
-        </div>
+        <br>
+        <hr>
+        <h3>Exemplo de Tabela</h3>
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>25</td>
+            </tr>
+        </table>
     </div>
-
-
 </body>
+
 </html>

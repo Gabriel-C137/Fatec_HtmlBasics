@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>IDs HTML</title>
+    <title>IDs em HTML - Tutorial</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
@@ -26,20 +25,7 @@
 
         #ensino {
             border: 5px double black;
-        }
-
-        #resposta {
-            border: 5px double black;
-        }
-
-        .exe {
-            display: flex;
-            justify-content: center;
-        }
-
-        #imagem {
-            width: 230px;
-            height: 230px;
+            padding: 20px;
         }
 
         #exemplo {
@@ -50,35 +36,35 @@
             border-color: black;
         }
 
-        #destaque {
-            background-color: lightyellow;
+        #content {
+            background-color: #f2f2f2;
             padding: 10px;
-            border: 2px solid orange;
-            border-radius: 5px;
+            border: 2px solid black;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 
 <body>
-    <h1>IDs HTML</h1>
+    <h1>IDs em HTML - Tutorial</h1>
     <hr>
-
     <div class="container">
         <div id="ensino">
-            <h3>O que são IDs HTML?</h3>
-            <p>IDs em HTML são atributos que podem ser adicionados a elementos HTML para identificá-los de forma única em uma página.</p>
+            <h3 style="font-size: 30px;">O que são IDs em HTML?</h3>
+            <p>O atributo "id" em HTML é usado para identificar exclusivamente um elemento na página da web. Cada ID deve ser único dentro de um documento HTML e pode ser usado para estilizar, acessar ou manipular o elemento usando JavaScript ou CSS.</p>
             <hr>
-            <p id="exemplo">Exemplo de Uso de ID:</p>
-            <div id="destaque">
-                <p>Este é um exemplo de conteúdo com o ID "destaque".</p>
-                <p>Podemos aplicar estilos específicos ou comportamentos JavaScript a elementos com IDs únicos.</p>
-            </div>
+            <h3>Exemplo de Código</h3>
+            <p id="exemplo">
+                &lt;div id="content"&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;Este é um conteúdo com um ID específico.&lt;/p&gt;<br>
+                &lt;/div&gt;
+            </p>
         </div>
-
-        <div id="resposta">
-            <br>
-            Os IDs HTML devem ser únicos em uma página, o que os torna úteis para identificar elementos específicos para estilização ou manipulação de script.
-            <br><br>
+        <br>
+        <hr>
+        <h3>Exemplo de Uso de ID</h3>
+        <div id="content">
+            <p>Este é um conteúdo com um ID específico.</p>
         </div>
     </div>
 </body>
