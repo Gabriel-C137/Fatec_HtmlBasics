@@ -106,6 +106,18 @@
         <div id="resposta">
             <br>
             Neste exemplo, o campo de senha está associado ao segundo formulário (signupForm) usando o atributo <code>form</code>. Quando o usuário preenche a senha e clica em "Login", os dados do campo de senha são enviados junto com o formulário de login, garantindo uma experiência de usuário consistente.
+            <br>
+            &lt;form id="loginForm" action="/login" method="post">
+                &lt;label for="username">Nome de Usuário:&lt;/label><br>
+                &lt;input type="text" id="username" name="username" required><br>
+                &lt;label for="password">Senha:&lt;/label><br>
+                &lt;input type="password" id="password" name="password" form="signupForm" required><br><br>
+                &lt;input type="submit" value="Login">
+            &lt;/form>
+
+            <form id="signupForm" action="/signup" method="post" style="display: none;">
+                <input type="text" name="hidden" style="display: none;">
+            </form>
             <br><br>
         </div>
     </div>
