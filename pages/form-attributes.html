@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Atributos de Formulários em HTML</title>
+    <title>Formulários em HTML</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
@@ -53,53 +53,51 @@
 </head>
 
 <body>
-    <h1>Atributos de Formulários em HTML</h1>
+    <h1>Formulários em HTML</h1>
     <hr>
 
     <div class="container">
         <div id="ensino">
-            <h3>O que são Atributos de Formulários em HTML?</h3>
-            <p>Atributos de Formulários em HTML são propriedades que podem ser adicionadas aos elementos <code>&lt;form&gt;</code> e <code>&lt;input&gt;</code> para controlar o comportamento e a aparência dos formulários em uma página da web.</p>
+            <h3>O que são Formulários em HTML?</h3>
+            <p>Formulários em HTML são elementos que permitem aos usuários interagir com uma página da web, inserindo dados que podem ser enviados para um servidor web para processamento. Eles são fundamentais para coletar informações do usuário, como nome, email, senha, entre outros.</p>
             <hr>
-            <p id="exemplo">Exemplo de Uso de Atributos de Formulários em HTML:</p>
+            <p id="exemplo">Exemplo de Uso de Formulários em HTML:</p>
             <form action="/processar_dados" method="post">
                 <label for="nome">Nome:</label><br>
-                <input type="text" id="nome" name="nome" required><br>
+                <input type="text" id="nome" name="nome"><br>
                 <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
+                <input type="email" id="email" name="email"><br><br>
                 <input type="submit" value="Enviar">
             </form>
         </div>
 
         <div id="resposta">
-            <br>
-            Atributos de Formulários em HTML oferecem uma maneira flexível de personalizar e validar a entrada de dados do usuário, garantindo uma melhor experiência de uso.
-            <br><br>
+            Formulários em HTML são uma parte essencial da experiência do usuário na web, permitindo a interação e a coleta de dados de forma eficiente e segura.
+            <p>Para criar aquele formulário:</p>
+            <p>
+                &lt;form action="/processar_dados" method="post">
+                    &lt;label for="nome">Nome:&lt;/label><br>
+                    &lt;input type="text" id="nome" name="nome"><br>
+                    &lt;label for="email">Email:&lt;/label><br>
+                    &lt;input type="email" id="email" name="email"><br><br>
+                    &lt;input type="submit" value="Enviar">
+                &lt;/form>
+            </p>
         </div>
     </div>
 
-    <div class="container">
-        <div id="ensino">
-            <h3>Exemplo de Uso de Atributos de Formulários em HTML</h3>
-            <p>Vamos adicionar um atributo <code>placeholder</code> para fornecer uma dica dentro dos campos de entrada:</p>
-            <hr>
-            <p id="exemplo">Exemplo:</p>
-            <form action="/cadastro" method="post">
-                <label for="usuario">Usuário:</label><br>
-                <input type="text" id="usuario" name="usuario" placeholder="Digite seu nome de usuário"><br>
-                <label for="senha">Senha:</label><br>
-                <input type="password" id="senha" name="senha" placeholder="Digite sua senha"><br><br>
-                <input type="submit" value="Entrar">
-            </form>
-        </div>
-
-        <div id="resposta">
-            <br>
-            O uso do atributo <code>placeholder</code> fornece uma dica para o usuário sobre o formato esperado dos dados, melhorando a usabilidade do formulário.
-            <br><br>
-        </div>
-    </div>
-
+    <hr>
+    <h3>Atributos de Formulários em HTML</h3>
+    <p>Os formulários em HTML podem ter vários atributos que ajudam a definir seu comportamento e ação. Aqui estão alguns dos atributos mais comuns:</p>
+    <ul>
+        <li><strong>action:</strong> Especifica para onde os dados do formulário serão enviados quando submetidos.</li>
+        <li><strong>method:</strong> Define como os dados do formulário serão enviados. Pode ser "get" ou "post".</li>
+        <li><strong>name:</strong> Define o nome do formulário, usado para identificá-lo no lado do servidor.</li>
+        <li><strong>id:</strong> Define um identificador exclusivo para o formulário, útil para estilização ou manipulação via JavaScript.</li>
+        <li><strong>autocomplete:</strong> Controla se o navegador deve ou não fornecer sugestões automáticas para campos de entrada.</li>
+        <li><strong>target:</strong> Especifica onde abrir o resultado do envio do formulário. Pode ser "_self", "_blank", "_parent", ou "_top".</li>
+        <li><strong>enctype:</strong> Especifica como os dados do formulário devem ser codificados ao serem enviados para o servidor. Usado principalmente para envio de arquivos.</li>
+    </ul>
 </body>
 
 </html>
