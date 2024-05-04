@@ -28,7 +28,7 @@ Para o acesso á esse projeto:
 ## 🖇️ Colaboração:
 
 * Professor Márcio - Fatec Franca
-* W3Schools.com.br - Site de Ensino sobre Programação
+* W3Schools.com.br - Site de Ensino sobre Programação [w3School](https://www.w3schools.com/html/default.asp)
 
 ## ✒️ Autores:
 
