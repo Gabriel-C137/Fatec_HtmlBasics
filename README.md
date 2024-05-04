@@ -17,7 +17,7 @@ Firefox e/ou Microsoft Edge)
 ### 🔧 Instalação/Acesso:
 
 Para o acesso á esse projeto:
-[Meu Site](https://gabriel-c137.github.io/Mini-Pi/)
+[Meu Site](https://gabriel-c137.github.io/Fatec_HtmlBasics/)
 
 ## 🛠️ Construído com:
 
