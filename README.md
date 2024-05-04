@@ -36,4 +36,14 @@ Para o acesso á esse projeto:
 * **Gabriel Camara** - *Documentação* - [Gabriel](https://github.com/Gabriel-C137)
 
 ## 👀 Visual do Projeto -
+![inicio](https://github.com/Gabriel-C137/Fatec_HtmlBasics/assets/91295561/a919f21f-1684-4981-9bc5-15a0ed5b0c44)
+![elements](https://github.com/Gabriel-C137/Fatec_HtmlBasics/assets/91295561/7de83b37-eff1-4ec0-b9d2-4ef6c7be4280)
+![attributes](https://github.com/Gabriel-C137/Fatec_HtmlBasics/assets/91295561/d8a95065-eec3-40bc-822c-d0d871e7ead1)
+![symbols](https://github.com/Gabriel-C137/Fatec_HtmlBasics/assets/91295561/7e429de0-7333-4eb0-bd55-49a17aab467f)
+![canvas](https://github.com/Gabriel-C137/Fatec_HtmlBasics/assets/91295561/0ea40d1f-507f-4357-8e95-18664a0749c3)
+...E muito mais...
+
+
+
+
 
