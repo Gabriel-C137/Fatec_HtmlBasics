@@ -1,4 +1,4 @@
-# Projeto de Estudo sobre HTML
+# Projeto para Fatec - HtmlBasics
 
 Esse projeto tem em vista construir um site para uma faculdade fictícia, contendo grandes textos, vídeo, imagens e botões interativos.
 
