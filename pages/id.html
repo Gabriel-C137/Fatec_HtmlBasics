@@ -5,37 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title></title>
+    <title>IDs HTML</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
         }
 
+        h3 {
+            font-size: 25px;
+        }
+
         .container {
             display: grid;
-            grid-template-columns: 550px 550px;
-            justify-content: space-around;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #ensino {
+            border: 5px double black;
+        }
+
+        #resposta {
+            border: 5px double black;
+        }
+
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+
+        #exemplo {
+            color: rgb(35, 72, 105);
         }
 
         hr {
             border-color: black;
         }
+
+        #destaque {
+            background-color: lightyellow;
+            padding: 10px;
+            border: 2px solid orange;
+            border-radius: 5px;
+        }
     </style>
 </head>
 
 <body>
-    <h1></h1>
+    <h1>IDs HTML</h1>
     <hr>
 
     <div class="container">
         <div id="ensino">
+            <h3>O que são IDs HTML?</h3>
+            <p>IDs em HTML são atributos que podem ser adicionados a elementos HTML para identificá-los de forma única em uma página.</p>
+            <hr>
+            <p id="exemplo">Exemplo de Uso de ID:</p>
+            <div id="destaque">
+                <p>Este é um exemplo de conteúdo com o ID "destaque".</p>
+                <p>Podemos aplicar estilos específicos ou comportamentos JavaScript a elementos com IDs únicos.</p>
+            </div>
         </div>
 
-        <div>
-        </div id="resposta">
+        <div id="resposta">
+            <br>
+            Os IDs HTML devem ser únicos em uma página, o que os torna úteis para identificar elementos específicos para estilização ou manipulação de script.
+            <br><br>
+        </div>
     </div>
-
-
 </body>
 
 </html>

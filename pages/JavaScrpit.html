@@ -5,16 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title></title>
+    <title>JavaScript no HTML</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
         }
 
+        h3 {
+            font-size: 25px;
+        }
+
         .container {
             display: grid;
-            grid-template-columns: 550px 550px;
-            justify-content: space-around;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #ensino {
+            border: 5px double black;
+        }
+
+        #resposta {
+            border: 5px double black;
+        }
+
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+
+        #exemplo {
+            color: rgb(35, 72, 105);
         }
 
         hr {
@@ -24,17 +53,23 @@
 </head>
 
 <body>
-    <h1></h1>
+    <h1>JavaScript no HTML</h1>
     <hr>
 
     <div class="container">
         <div id="ensino">
+            <h3>O que é JavaScript no HTML?</h3>
+            <p>O JavaScript embutido em HTML permite adicionar scripts diretamente no código HTML, o que pode ser útil para realizar tarefas simples, como manipulação do DOM (Modelo de Objeto do Documento) ou execução de funções específicas.</p>
+            <hr>
+            <p id="exemplo">Exemplo de JavaScript no HTML:</p>
+            <button onclick="alert('Olá, mundo!')">Clique aqui</button>
+            <br><br>
         </div>
 
-        <div>
-        </div id="resposta">
+        <div id="resposta">
+            O JavaScript embutido em HTML é uma maneira rápida e conveniente de adicionar interatividade a uma página da web, mas é mais comum separar o código JavaScript em arquivos externos para facilitar a manutenção e o gerenciamento do código.
+        </div>
     </div>
-
 
 </body>
 

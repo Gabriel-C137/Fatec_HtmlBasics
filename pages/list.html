@@ -5,16 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title></title>
+    <title>Listas HTML</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
         }
 
+        h3 {
+            font-size: 25px;
+        }
+
         .container {
             display: grid;
-            grid-template-columns: 550px 550px;
-            justify-content: space-around;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #ensino {
+            border: 5px double black;
+        }
+
+        #resposta {
+            border: 5px double black;
+        }
+
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+
+        #exemplo {
+            color: rgb(35, 72, 105);
         }
 
         hr {
@@ -24,18 +53,35 @@
 </head>
 
 <body>
-    <h1></h1>
+    <h1>Listas HTML</h1>
     <hr>
 
     <div class="container">
         <div id="ensino">
+            <h3>O que são Listas HTML?</h3>
+            <p>Listas HTML são utilizadas para organizar informações em formatos de itens numerados ou itens não numerados.</p>
+            <hr>
+            <p id="exemplo">Exemplo de Lista Não Numerada:</p>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <br>
+            <p id="exemplo">Exemplo de Lista Numerada:</p>
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
         </div>
 
-        <div>
-        </div id="resposta">
+        <div id="resposta">
+            <br>
+            As listas HTML podem ser criadas usando os elementos <code>&lt;ul&gt;</code> para listas não numeradas e <code>&lt;ol&gt;</code> para listas numeradas. Cada item da lista é representado pelo elemento <code>&lt;li&gt;</code>.
+            <br><br>
+        </div>
     </div>
-
-
 </body>
 
 </html>

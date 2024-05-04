@@ -5,16 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title></title>
+    <title>Elementos de Formulários em HTML</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
         }
 
+        h3 {
+            font-size: 25px;
+        }
+
         .container {
             display: grid;
-            grid-template-columns: 550px 550px;
-            justify-content: space-around;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #ensino {
+            border: 5px double black;
+        }
+
+        #resposta {
+            border: 5px double black;
+        }
+
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+
+        #exemplo {
+            color: rgb(35, 72, 105);
         }
 
         hr {
@@ -24,17 +53,60 @@
 </head>
 
 <body>
-    <h1></h1>
+    <h1>Elementos de Formulários em HTML</h1>
     <hr>
 
     <div class="container">
         <div id="ensino">
+            <h3>O que são Elementos de Formulários em HTML?</h3>
+            <p>Elementos de Formulários em HTML são os diferentes tipos de campos e controles que podem ser utilizados dentro de um formulário para coletar dados do usuário. Alguns exemplos comuns incluem campos de texto, caixas de seleção, botões de rádio, entre outros.</p>
+            <hr>
+            <p id="exemplo">Exemplos de Elementos de Formulários em HTML:</p>
+            <form action="/cadastro" method="post">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <input type="submit" value="Enviar">
+            </form>
         </div>
 
-        <div>
-        </div id="resposta">
+        <div id="resposta">
+            Elementos de Formulários em HTML oferecem uma ampla variedade de opções para coletar e processar dados do usuário, tornando a interação com as páginas da web mais dinâmica e personalizada.
+        </div>
     </div>
+    <hr>
+    <h1>Elementos de Formulários em HTML - Exemplo 2</h1>
+    <hr>
 
+    <div class="container">
+        <div id="ensino">
+            <h3>Exemplo de Elementos de Formulários em HTML</h3>
+            <p>Neste exemplo, vamos adicionar campos de texto, caixas de seleção e botões de rádio:</p>
+            <hr>
+            <p id="exemplo">Exemplo:</p>
+            <form action="/cadastro" method="post">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome"><br>
+                <label for="cidade">Cidade:</label><br>
+                <select id="cidade" name="cidade">
+                    <option value="sao_paulo">São Paulo</option>
+                    <option value="rio_de_janeiro">Rio de Janeiro</option>
+                    <option value="belo_horizonte">Belo Horizonte</option>
+                </select><br>
+                <label>Gênero:</label><br>
+                <input type="radio" id="masculino" name="genero" value="masculino">
+                <label for="masculino">Masculino</label><br>
+                <input type="radio" id="feminino" name="genero" value="feminino">
+                <label for="feminino">Feminino</label><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+        <div id="resposta">
+            Elementos de Formulários em HTML oferecem uma variedade de opções para coletar informações dos usuários, desde campos de texto simples até seleções e escolhas múltiplas.
+        </div>
+    </div>
 
 </body>
 

@@ -5,16 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title></title>
+    <title>Formulários em HTML</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
         }
 
+        h3 {
+            font-size: 25px;
+        }
+
         .container {
             display: grid;
-            grid-template-columns: 550px 550px;
-            justify-content: space-around;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #ensino {
+            border: 5px double black;
+        }
+
+        #resposta {
+            border: 5px double black;
+        }
+
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+
+        #exemplo {
+            color: rgb(35, 72, 105);
         }
 
         hr {
@@ -24,17 +53,28 @@
 </head>
 
 <body>
-    <h1></h1>
+    <h1>Formulários em HTML</h1>
     <hr>
 
     <div class="container">
         <div id="ensino">
+            <h3>O que são Formulários em HTML?</h3>
+            <p>Formulários em HTML são elementos que permitem aos usuários interagir com uma página da web, inserindo dados que podem ser enviados para um servidor web para processamento. Eles são fundamentais para coletar informações do usuário, como nome, email, senha, entre outros.</p>
+            <hr>
+            <p id="exemplo">Exemplo de Uso de Formulários em HTML:</p>
+            <form action="/processar_dados" method="post">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <input type="submit" value="Enviar">
+            </form>
         </div>
 
-        <div>
-        </div id="resposta">
+        <div id="resposta">
+            Formulários em HTML são uma parte essencial da experiência do usuário na web, permitindo a interação e a coleta de dados de forma eficiente e segura.
+        </div>
     </div>
-
 
 </body>
 

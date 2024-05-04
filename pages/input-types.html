@@ -5,16 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title></title>
+    <title>Tipos de Entrada em HTML</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
         }
 
+        h3 {
+            font-size: 25px;
+        }
+
         .container {
             display: grid;
-            grid-template-columns: 550px 550px;
-            justify-content: space-around;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #ensino {
+            border: 5px double black;
+        }
+
+        #resposta {
+            border: 5px double black;
+        }
+
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+
+        #exemplo {
+            color: rgb(35, 72, 105);
         }
 
         hr {
@@ -24,18 +53,62 @@
 </head>
 
 <body>
-    <h1></h1>
+    <h1>Tipos de Entrada em HTML</h1>
     <hr>
 
     <div class="container">
         <div id="ensino">
+            <h3>O que são Tipos de Entrada em HTML?</h3>
+            <p>Tipos de Entrada em HTML são atributos que definem o comportamento e a aparência dos campos de entrada em um formulário. Eles determinam como os dados serão coletados e validados pelos usuários.</p>
+            <hr>
+            <p id="exemplo">Exemplos de Tipos de Entrada em HTML:</p>
+            <form action="/cadastro" method="post">
+                <label for="texto">Texto:</label><br>
+                <input type="text" id="texto" name="texto" placeholder="Digite um texto"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Digite seu email"><br><br>
+                <input type="submit" value="Enviar">
+            </form>
         </div>
 
-        <div>
-        </div id="resposta">
+        <div id="resposta">
+            <br>
+            Tipos de Entrada em HTML oferecem uma maneira flexível de coletar e validar dados dos usuários, ajudando a criar formulários mais interativos e amigáveis.
+            <br><br>
+        </div>
+    </div>
+<hr>
+<br>
+<h1>Tipos de Entrada em HTML - Exemplo 2</h1>
+<hr>
+
+<div class="container">
+    <div id="ensino">
+        <h3>Exemplo de Tipos de Entrada em HTML</h3>
+        <p>Neste exemplo, vamos adicionar campos de senha, números e caixa de seleção:</p>
+        <hr>
+        <p id="exemplo">Exemplo:</p>
+        <form action="/cadastro" method="post">
+            <label for="senha">Senha:</label><br>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha"><br>
+            <label for="idade">Idade:</label><br>
+            <input type="number" id="idade" name="idade" min="18" max="100"><br>
+            <label for="linguagem">Linguagem de Programação Preferida:</label><br>
+            <select id="linguagem" name="linguagem">
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+            </select><br><br>
+            <input type="submit" value="Enviar">
+        </form>
     </div>
 
-
+    <div id="resposta">
+        <br>
+        Os tipos de entrada em HTML oferecem uma variedade de opções para coletar diferentes tipos de dados dos usuários, desde senhas seguras até seleções de preferências.
+        <br><br>
+    </div>
+</div>
 </body>
 
 </html>

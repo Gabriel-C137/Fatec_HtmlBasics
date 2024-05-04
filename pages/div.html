@@ -5,16 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title></title>
+    <title>Tag &lt;div&gt; HTML</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
         }
 
+        h3 {
+            font-size: 25px;
+        }
+
         .container {
             display: grid;
-            grid-template-columns: 550px 550px;
-            justify-content: space-around;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #ensino {
+            border: 5px double black;
+        }
+
+        #resposta {
+            border: 5px double black;
+        }
+
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+
+        #exemplo {
+            color: rgb(35, 72, 105);
         }
 
         hr {
@@ -24,18 +53,27 @@
 </head>
 
 <body>
-    <h1></h1>
+    <h1>Tag &lt;div&gt; HTML</h1>
     <hr>
 
     <div class="container">
         <div id="ensino">
+            <h3>O que é a Tag &lt;div&gt;?</h3>
+            <p>A tag `<div>` é um elemento de bloco que é frequentemente usado como um contêiner genérico para outros elementos HTML. Ela não tem significado semântico próprio, mas é útil para agrupar e estilizar partes de uma página da web.</p>
+            <hr>
+            <p id="exemplo">Exemplo de Uso da Tag &lt;div&gt;:</p>
+            <div style="background-color: lightblue; padding: 10px;">
+                <h4>Este é um exemplo de conteúdo dentro de uma div.</h4>
+                <p>Podemos adicionar qualquer tipo de conteúdo aqui, como texto, imagens, outras tags HTML, etc.</p>
+            </div>
         </div>
 
-        <div>
-        </div id="resposta">
+        <div id="resposta">
+            <br>
+            A tag `<div>` é uma ferramenta poderosa para organizar e estruturar o conteúdo de uma página da web. Ela é frequentemente combinada com CSS para estilizar o layout da página.
+            <br><br>
+            </div>
     </div>
-
-
 </body>
 
 </html>

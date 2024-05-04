@@ -5,37 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title></title>
+    <title>Classes HTML</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
         }
 
+        h3 {
+            font-size: 25px;
+        }
+
         .container {
             display: grid;
-            grid-template-columns: 550px 550px;
-            justify-content: space-around;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #ensino {
+            border: 5px double black;
+        }
+
+        #resposta {
+            border: 5px double black;
+        }
+
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+
+        #exemplo {
+            color: rgb(35, 72, 105);
         }
 
         hr {
             border-color: black;
         }
+
+        .destaque {
+            background-color: lightyellow;
+            padding: 10px;
+            border: 2px solid orange;
+            border-radius: 5px;
+        }
     </style>
 </head>
 
 <body>
-    <h1></h1>
+    <h1>Classes HTML</h1>
     <hr>
 
     <div class="container">
         <div id="ensino">
+            <h3>O que são Classes HTML?</h3>
+            <p>Classes em HTML são atributos que podem ser adicionados a elementos HTML para estilizá-los ou aplicar comportamentos específicos.</p>
+            <hr>
+            <p id="exemplo">Exemplo de Uso de Classes:</p>
+            <div class="destaque">
+                <p>Este é um exemplo de conteúdo com a classe "destaque".</p>
+                <p>Podemos aplicar diferentes estilos a elementos com a mesma classe.</p>
+            </div>
         </div>
 
-        <div>
-        </div id="resposta">
+        <div id="resposta">
+            <br>
+            As classes HTML são especialmente úteis quando usadas em conjunto com CSS, permitindo estilos consistentes e reutilizáveis em uma página da web.
+            <br><br>
+        </div>
     </div>
-
-
 </body>
 
 </html>

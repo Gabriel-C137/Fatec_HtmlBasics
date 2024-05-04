@@ -5,16 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title></title>
+    <title>Guia de Estilo em HTML</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
         }
 
+        h3 {
+            font-size: 25px;
+        }
+
         .container {
             display: grid;
-            grid-template-columns: 550px 550px;
-            justify-content: space-around;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #ensino {
+            border: 5px double black;
+        }
+
+        #resposta {
+            border: 5px double black;
+        }
+
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+
+        #exemplo {
+            color: rgb(35, 72, 105);
         }
 
         hr {
@@ -24,17 +53,56 @@
 </head>
 
 <body>
-    <h1></h1>
+    <h1>Guia de Estilo em HTML</h1>
     <hr>
 
     <div class="container">
         <div id="ensino">
+            <h3>O que é um Guia de Estilo em HTML?</h3>
+            <p>Um guia de estilo em HTML é um conjunto de diretrizes que define a forma como o código HTML deve ser escrito e organizado em um projeto web. Ele inclui recomendações sobre a estrutura do documento, a nomenclatura de classes e IDs, a formatação do código e outras práticas recomendadas.</p>
+            <hr>
+            <p id="exemplo">Exemplo de Elemento Block:</p>
+            <pre>
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Título do Documento&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Título Principal&lt;/h1&gt;
+    &lt;p&gt;Este é um parágrafo.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+<br>
+<hr>
+            </pre>
+            <p id="exemplo">Exemplo de Nomenclatura de Classes e IDs:</p>
+            <pre>
+/* CSS */
+.destaque {
+    background-color: lightyellow;
+    border: 2px solid orange;
+    border-radius: 5px;
+}
+
+#cabecalho {
+    font-size: 24px;
+    color: blue;
+}
+
+/* HTML */
+&lt;div class="destaque" id="cabecalho"&gt;
+    &lt;h2&gt;Título Destacado&lt;/h2&gt;
+    &lt;p&gt;Este é um elemento com classe e ID definidos.&lt;/p&gt;
+&lt;/div&gt;
+            </pre>
         </div>
 
-        <div>
-        </div id="resposta">
+        <div id="resposta">
+            <br>
+            Um guia de estilo em HTML é importante para garantir consistência, legibilidade e manutenibilidade do código em um projeto web, facilitando a colaboração entre os membros da equipe e garantindo uma experiência de usuário mais consistente.
+            <br><br>
+        </div>
     </div>
-
 
 </body>
 

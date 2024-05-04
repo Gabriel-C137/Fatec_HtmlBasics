@@ -5,16 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title></title>
+    <title>Semântica em HTML</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
         }
 
+        h3 {
+            font-size: 25px;
+        }
+
         .container {
             display: grid;
-            grid-template-columns: 550px 550px;
-            justify-content: space-around;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #ensino {
+            border: 5px double black;
+        }
+
+        #resposta {
+            border: 5px double black;
+        }
+
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+
+        #exemplo {
+            color: rgb(35, 72, 105);
         }
 
         hr {
@@ -24,17 +53,27 @@
 </head>
 
 <body>
-    <h1></h1>
+    <h1>Semântica em HTML</h1>
     <hr>
 
     <div class="container">
         <div id="ensino">
+            <h3>O que é Semântica em HTML?</h3>
+            <p>A semântica em HTML refere-se à utilização apropriada de elementos HTML para descrever o conteúdo de uma página da web de forma significativa para os navegadores e motores de busca.</p>
+            <hr>
+            <p id="exemplo">Exemplo de Uso de Semântica:</p>
+            <article>
+                <h2>Título do Artigo</h2>
+                <p>Este é um artigo sobre semântica em HTML.</p>
+            </article>
         </div>
 
-        <div>
-        </div id="resposta">
+        <div id="resposta">
+            <br>
+            Utilizar elementos HTML de forma semântica melhora a acessibilidade, a indexação pelos motores de busca e a compreensão do conteúdo por parte dos desenvolvedores e usuários da web.
+            <br><br>
+        </div>
     </div>
-
 
 </body>
 

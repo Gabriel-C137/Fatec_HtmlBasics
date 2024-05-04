@@ -5,16 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title></title>
+    <title>Tabelas HTML</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
         }
 
-	h3 {
+        h3 {
             font-size: 25px;
         }
-
 
         .container {
             display: grid;
@@ -25,13 +24,14 @@
             font-size: 20px;
         }
 
-        #ensino { 
+        #ensino {
             border: 5px double black;
         }
 
-        #reposta { 
+        #resposta {
             border: 5px double black;
         }
+
         .exe {
             display: flex;
             justify-content: center;
@@ -41,7 +41,11 @@
             width: 230px;
             height: 230px;
         }
-        #exemplo{
+        table, tr,td,th {
+            border: 3px solid black;
+        }
+
+        #exemplo {
             color: rgb(35, 72, 105);
         }
 
@@ -52,19 +56,51 @@
 </head>
 
 <body>
-    <h1></h1>
+    <h1>Tabelas HTML</h1>
     <hr>
 
     <div class="container">
         <div id="ensino">
-            <h3></h3>
-            <p></p>
+            <h3>O que são Tabelas HTML?</h3>
+            <p>Tabelas HTML são elementos utilizados para organizar dados em linhas e colunas.</p>
             <hr>
-            <p id="exemplo"></p>
+            <p id="exemplo">Exemplo:</p>
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                </tr>
+                <tr>
+                    <td>João</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>30</td>
+                </tr>
+            </table>
+            <br>
+            <p id="exemplo">Outro Exemplo:</p>
+            <table>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                </tr>
+                <tr>
+                    <td>Camisa</td>
+                    <td>R$ 30,00</td>
+                </tr>
+                <tr>
+                    <td>Calça</td>
+                    <td>R$ 50,00</td>
+                </tr>
+            </table>
         </div>
 
         <div id="resposta">
-
+            <br>
+            Uma tabela HTML é composta por elementos como <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code> (linha), <code>&lt;th&gt;</code> (cabeçalho da tabela) e <code>&lt;td&gt;</code> (célula da tabela).
+            <br><br>
         </div>
     </div>
 

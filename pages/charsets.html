@@ -5,16 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title></title>
+    <title>Charsets em HTML</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
         }
 
+        h3 {
+            font-size: 25px;
+        }
+
         .container {
             display: grid;
-            grid-template-columns: 550px 550px;
-            justify-content: space-around;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #ensino {
+            border: 5px double black;
+        }
+
+        #resposta {
+            border: 5px double black;
+        }
+
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+
+        #exemplo {
+            color: rgb(35, 72, 105);
         }
 
         hr {
@@ -24,17 +53,27 @@
 </head>
 
 <body>
-    <h1></h1>
+    <h1>Charsets em HTML</h1>
     <hr>
 
     <div class="container">
         <div id="ensino">
+            <h3>O que são Charsets em HTML?</h3>
+            <p>Charsets em HTML (conjunto de caracteres) são especificações que definem como os caracteres são codificados e interpretados em uma página da web. O charset UTF-8 é amplamente utilizado e suporta uma ampla variedade de caracteres, incluindo caracteres especiais e emojis.</p>
+            <hr>
+            <p id="exemplo">Exemplo de Uso de Charset em HTML:</p>
+            <p>Aqui está um símbolo de dólar: $</p>
+            <br><p>Ou</p>
+            <p id="exemplo">Exemplo de Uso de Charset em HTML:</p>
+            <p>Aqui está um caractere acentuado: é</p>
         </div>
 
-        <div>
-        </div id="resposta">
+        <div id="resposta">
+            <br>
+            Especificar o charset em HTML é importante para garantir que os caracteres sejam exibidos corretamente em diferentes navegadores e dispositivos, especialmente quando se trata de idiomas e caracteres especiais.
+            <br><br>
+        </div>
     </div>
-
 
 </body>
 

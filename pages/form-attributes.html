@@ -5,16 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title></title>
+    <title>Atributos de Formulários em HTML</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
         }
 
+        h3 {
+            font-size: 25px;
+        }
+
         .container {
             display: grid;
-            grid-template-columns: 550px 550px;
-            justify-content: space-around;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #ensino {
+            border: 5px double black;
+        }
+
+        #resposta {
+            border: 5px double black;
+        }
+
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+
+        #exemplo {
+            color: rgb(35, 72, 105);
         }
 
         hr {
@@ -24,17 +53,52 @@
 </head>
 
 <body>
-    <h1></h1>
+    <h1>Atributos de Formulários em HTML</h1>
     <hr>
 
     <div class="container">
         <div id="ensino">
+            <h3>O que são Atributos de Formulários em HTML?</h3>
+            <p>Atributos de Formulários em HTML são propriedades que podem ser adicionadas aos elementos <code>&lt;form&gt;</code> e <code>&lt;input&gt;</code> para controlar o comportamento e a aparência dos formulários em uma página da web.</p>
+            <hr>
+            <p id="exemplo">Exemplo de Uso de Atributos de Formulários em HTML:</p>
+            <form action="/processar_dados" method="post">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <input type="submit" value="Enviar">
+            </form>
         </div>
 
-        <div>
-        </div id="resposta">
+        <div id="resposta">
+            <br>
+            Atributos de Formulários em HTML oferecem uma maneira flexível de personalizar e validar a entrada de dados do usuário, garantindo uma melhor experiência de uso.
+            <br><br>
+        </div>
     </div>
 
+    <div class="container">
+        <div id="ensino">
+            <h3>Exemplo de Uso de Atributos de Formulários em HTML</h3>
+            <p>Vamos adicionar um atributo <code>placeholder</code> para fornecer uma dica dentro dos campos de entrada:</p>
+            <hr>
+            <p id="exemplo">Exemplo:</p>
+            <form action="/cadastro" method="post">
+                <label for="usuario">Usuário:</label><br>
+                <input type="text" id="usuario" name="usuario" placeholder="Digite seu nome de usuário"><br>
+                <label for="senha">Senha:</label><br>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha"><br><br>
+                <input type="submit" value="Entrar">
+            </form>
+        </div>
+
+        <div id="resposta">
+            <br>
+            O uso do atributo <code>placeholder</code> fornece uma dica para o usuário sobre o formato esperado dos dados, melhorando a usabilidade do formulário.
+            <br><br>
+        </div>
+    </div>
 
 </body>
 
