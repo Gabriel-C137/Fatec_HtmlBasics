@@ -4,38 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title></title>
-    <style>
-        h1 {
-            font-family: 'Lucida Sans';
-        }
-
-        .container {
-            display: grid;
-            grid-template-columns: 550px 550px;
-            justify-content: space-around;
-        }
-
-        hr {
-            border-color: black;
-        }
-    </style>
+    <title>Canvas em HTML - Exemplo Simples</title>
 </head>
 
 <body>
-    <h1></h1>
-    <hr>
-
-    <div class="container">
-        <div id="ensino">
-        </div>
-
-        <div>
-        </div id="resposta">
+    <h1>Canvas em HTML</h1>
+<hr>
+<div class="container">
+    <div id="ensino">
+        <h3 style="font-size: 30px;">O que é tela HTML?</h3>
+        <p>O elemento HTML &lt;canvas>é usado para desenhar gráficos dinamicamente, via JavaScript. <br>
+            O &lt;canvas>elemento é apenas um contêiner para gráficos. Você deve usar JavaScript para realmente desenhar os gráficos.<br>
+            O Canvas possui vários métodos para desenhar caminhos, caixas, círculos, texto e adicionar imagens.<br>
+            Canvas é compatível com todos os principais navegadores.<br></p>
+            <hr>
+            <br>
+            <h3>Exemplo de código</h3>
+            <p id="exemplo">&lt;canvas id="canvas" width="400" height="200" style="border: 2px solid black;">&lt;/canvas></p>
     </div>
+<br>
+<hr>
+    <canvas id="canvas" width="400" height="200" style="border: 2px solid black;"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        let isDrawing = false;
+        
+        canvas.addEventListener('mousedown', startDrawing);
+        canvas.addEventListener('mousemove', draw);
+        canvas.addEventListener('mouseup', stopDrawing);
+        canvas.addEventListener('mouseout', stopDrawing);
 
+        function startDrawing(e) {
+            isDrawing = true;
+            draw(e);
+        }
 
+        function draw(e) {
+            if (!isDrawing) return;
+
+            ctx.lineWidth = 5;
+            ctx.lineCap = 'round';
+            ctx.strokeStyle = 'black';
+
+            ctx.lineTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+        }
+
+        function stopDrawing() {
+            isDrawing = false;
+            ctx.beginPath();
+        }
+    </script>
 </body>
 
 </html>

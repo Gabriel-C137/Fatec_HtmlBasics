@@ -4,17 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title></title>
+    <title>SVG em HTML - Tutorial</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
         }
 
+	h3 {
+            font-size: 25px;
+        }
+
+
         .container {
             display: grid;
-            grid-template-columns: 550px 550px;
-            justify-content: space-around;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #ensino { 
+            border: 5px double black;
+        }
+
+        #reposta { 
+            border: 5px double black;
+        }
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+        #exemplo{
+            color: rgb(35, 72, 105);
         }
 
         hr {
@@ -24,18 +51,30 @@
 </head>
 
 <body>
-    <h1></h1>
+    <h1>SVG em HTML - Tutorial</h1>
     <hr>
-
     <div class="container">
         <div id="ensino">
+            <h3 style="font-size: 30px;">O que é SVG?</h3>
+            <p>SVG (Scalable Vector Graphics) é uma linguagem de marcação baseada em XML para descrever gráficos vetoriais bidimensionais. Em contraste com imagens rasterizadas (como JPEG, PNG, GIF), que representam imagens como uma grade de pixels, os gráficos vetoriais são compostos de formas geométricas primitivas, como linhas, curvas e formas, que são renderizadas com precisão, independentemente do tamanho em que são exibidas.</p>
+            <hr>
+            <br>
+            <h3>Exemplo de código SVG</h3>
+            <p id="exemplo">&lt;svg width="400" height="200"&gt;<br>
+                &nbsp;&nbsp;&lt;circle cx="100" cy="100" r="50" fill="red" /&gt;<br>
+                &nbsp;&nbsp;&lt;rect x="200" y="50" width="100" height="100" fill="blue" /&gt;<br>
+                &nbsp;&nbsp;&lt;text x="150" y="180" font-size="24" fill="green"&gt;SVG&lt;/text&gt;<br>
+                &lt;/svg&gt;</p>
         </div>
-
-        <div>
-        </div id="resposta">
+        <br>
+        <hr>
+        <h3 style="border: 5px solid rgb(155, 30, 30);">Visualização do SVG</h3>
+        <svg width="400" height="200">
+            <circle cx="100" cy="100" r="50" fill="red" />
+            <rect x="200" y="50" width="100" height="100" fill="blue" />
+            <text x="150" y="180" font-size="24" fill="green">SVG</text>
+        </svg>
     </div>
-
-
 </body>
 
 </html>

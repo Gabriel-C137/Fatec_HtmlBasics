@@ -4,17 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title></title>
+    <title>Vídeo no HTML - Tutorial</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
         }
 
+        h3 {
+            font-size: 25px;
+        }
+
         .container {
             display: grid;
-            grid-template-columns: 550px 550px;
-            justify-content: space-around;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #ensino {
+            border: 5px double black;
+            padding: 20px;
+        }
+
+        #resposta {
+            border: 5px double black;
+            padding: 20px;
+        }
+
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+
+        #exemplo {
+            color: rgb(35, 72, 105);
         }
 
         hr {
@@ -24,18 +54,30 @@
 </head>
 
 <body>
-    <h1></h1>
+    <h1>Vídeo no HTML - Tutorial</h1>
     <hr>
-
     <div class="container">
         <div id="ensino">
+            <h3 style="font-size: 30px;">Incorporando Vídeo com HTML</h3>
+            <p>O elemento HTML `&lt;video>` permite incorporar vídeos em uma página da web. Veja como fazer:</p>
+            <hr>
+            <br>
+            <h3>Exemplo de Código</h3>
+            <p id="exemplo">
+                &lt;video width="400" height="300" controls&gt;<br>
+                &nbsp;&nbsp;&lt;source src="video/Deadpool & Wolverine _ Trailer Oficial Legendado (1).mp4" type="video/mp4"&gt;<br>
+                &nbsp;Seu navegador não suporta o elemento &lt;video&gt;.<br>
+                &lt;/video&gt;
+            </p>
         </div>
-
-        <div>
-        </div id="resposta">
+        <br>
+        <hr>
+        <h3 style="border: 5px solid rgb(155, 30, 30);">Seu código ficará assim</h3>
+        <video width="1000" height="500" controls>
+            <source src="../video/Deadpool & Wolverine _ Trailer Oficial Legendado (1).mp4" type="video/mp4">
+            Seu navegador não suporta o elemento <video>.
+        </video>
     </div>
-
-
 </body>
 
 </html>

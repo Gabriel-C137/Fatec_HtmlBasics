@@ -4,17 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title></title>
+    <title>Mídia no HTML - Tutorial</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
         }
 
+        h3 {
+            font-size: 25px;
+        }
+
         .container {
             display: grid;
-            grid-template-columns: 550px 550px;
-            justify-content: space-around;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #ensino {
+            border: 5px double black;
+        }
+
+        #resposta {
+            border: 5px double black;
+        }
+
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+
+        #exemplo {
+            color: rgb(35, 72, 105);
         }
 
         hr {
@@ -24,18 +52,28 @@
 </head>
 
 <body>
-    <h1></h1>
+    <h1>Mídia no HTML - Tutorial</h1>
     <hr>
-
     <div class="container">
         <div id="ensino">
+            <h3 style="font-size: 30px;">O que é Mídia no HTML?</h3>
+            <p>Os elementos de mídia no HTML permitem incorporar e exibir diferentes tipos de conteúdo de mídia, como áudio, vídeo e imagens, diretamente em uma página da web. Isso pode incluir arquivos de áudio MP3, vídeos MP4, imagens JPEG, entre outros.</p>
+            <hr>
+            <br>
+            <h3>Exemplo de código para inserir um vídeo</h3>
+            <p id="exemplo">&lt;video width="400" height="300" controls&gt;<br>
+                &nbsp;&nbsp;&lt;source src="video.mp4" type="video/mp4"&gt;<br>
+                &nbsp;Seu navegador não suporta o elemento &lt;video&gt;.<br>
+                &lt;/video&gt;</p>
         </div>
-
-        <div>
-        </div id="resposta">
+        <br>
+        <hr>
+        <h3 style="border: 5px solid rgb(155, 30, 30);">Exemplo de Vídeo</h3>
+        <video width="400" height="300" controls>
+            <source src="video.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento &lt;video&gt;.
+        </video>
     </div>
-
-
 </body>
 
 </html>

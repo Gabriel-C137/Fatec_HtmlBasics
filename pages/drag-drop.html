@@ -4,38 +4,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title></title>
+    <title>Arrastar e Soltar em HTML - Tutorial</title>
     <style>
         h1 {
             font-family: 'Lucida Sans';
         }
 
+        h3 {
+            font-size: 25px;
+        }
+
         .container {
             display: grid;
-            grid-template-columns: 550px 550px;
-            justify-content: space-around;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #ensino {
+            border: 5px double black;
+            padding: 20px;
+        }
+
+        #resposta {
+            border: 5px double black;
+            padding: 20px;
+        }
+
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+
+        #exemplo {
+            color: rgb(35, 72, 105);
         }
 
         hr {
             border-color: black;
         }
+
+        .dropzone {
+            width: 300px;
+            height: 200px;
+            border: 2px dashed #ccc;
+            text-align: center;
+            line-height: 200px;
+            font-size: 20px;
+            color: #666;
+            margin: 20px auto;
+        }
+
+        .dragged-element {
+            width: 100px;
+            height: 100px;
+            background-color: #f00;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+            font-size: 16px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
     </style>
 </head>
 
 <body>
-    <h1></h1>
+    <h1>Arrastar e Soltar em HTML - Tutorial</h1>
     <hr>
-
     <div class="container">
         <div id="ensino">
+            <h3 style="font-size: 30px;">Como Implementar o Drag and Drop</h3>
+            <p>Para implementar o arrastar e soltar em HTML, você pode usar os eventos `dragstart`, `drag`, `dragover` e `drop`. Veja um exemplo abaixo:</p>
+            <hr>
+            <br>
+            <h3>Exemplo de Código</h3>
+            <p id="exemplo">
+                &lt;div class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)"&gt;<br>
+                &nbsp;&nbsp;Arraste e solte aqui!<br>
+                &lt;/div&gt;<br>
+                &lt;div class="dragged-element" draggable="true" ondragstart="drag(event)"&gt;Elemento Arrastável&lt;/div&gt;
+            </p>
+            <hr>
+            <h3>Como auxilio coloquei também css:</h3>
+            <p>
+                .dropzone {<br>
+                    width: 300px;<br>
+                    height: 200px;<br>
+                    border: 2px dashed #ccc;<br>
+                    text-align: center;<br>
+                    line-height: 200px;<br>
+                    font-size: 20px;<br>
+                    color: #666;<br>
+                    margin: 20px auto;<br>
+                }<br>
+                <br><br>
+                .dragged-element {<br>
+                    width: 100px;<br>
+                    height: 100px;<br>
+                    background-color: #f00;<br>
+                    color: #fff;<br>
+                    text-align: center;<br>
+                    line-height: 100px;<br>
+                    font-size: 16px;<br>
+                    position: absolute;<br>
+                    top: 0;<br>
+                    left: 0;<br>
+                    display: none;<br>
+                }<br>
+                <br>
+            </p>
         </div>
-
-        <div>
-        </div id="resposta">
+        <br>
+        <hr>
+        <h3 style="border: 5px solid rgb(155, 30, 30);">Exemplo de Drag and Drop</h3>
+        <div class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">
+            Arraste e solte aqui!
+        </div>
+        <div class="dragged-element" draggable="true" ondragstart="drag(event)">Elemento Arrastável</div>
     </div>
 
+    <script>
+        function allowDrop(event) {
+            event.preventDefault();
+        }
 
+        function drag(event) {
+            event.dataTransfer.setData("text", event.target.id);
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            var data = event.dataTransfer.getData("text");
+            var draggedElement = document.getElementById(data);
+            draggedElement.style.display = "block";
+            draggedElement.style.top = event.clientY - draggedElement.offsetHeight / 2 + "px";
+            draggedElement.style.left = event.clientX - draggedElement.offsetWidth / 2 + "px";
+        }
+    </script>
 </body>
 
 </html>
