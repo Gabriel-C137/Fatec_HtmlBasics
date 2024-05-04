@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <style>
+        h1 {
+            font-family: 'Lucida Sans';
+        }
+
+	h3 {
+            font-size: 25px;
+        }
+
+
+        .container {
+            display: grid;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #ensino { 
+            border: 5px double black;
+        }
+
+        #reposta { 
+            border: 5px double black;
+        }
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+        #exemplo{
+            color: rgb(35, 72, 105);
+        }
+
+        hr {
+            border-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1></h1>
+    <hr>
+
+    <div class="container">
+        <div id="ensino">
+            <h3>Como adicionar um favicon em HTML</h3>
+            <p>Uma imagem de favicon é exibida à esquerda do título da página na guia do navegador, assim:</p>
+            <img src="../img/favicon.png" alt="exemplo">
+            <hr>
+            <p>Para aplicar...<br>
+                Dentro do head, coloque:</p>
+            <p id="exemplo">                 
+                &lt;head><br>
+                &lt;title>My Page Title&lt;/title><br>
+                &lt;link rel="icon" type="image/x-icon" href="/images/favicon.ico"><br>
+                &lt;/head><br></p>
+        </div>
+    </div>
+
+
+</body>
+</html>

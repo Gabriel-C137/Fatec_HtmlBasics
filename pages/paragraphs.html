@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <style>
+        h1 {
+            font-family: 'Lucida Sans';
+        }
+
+        .container {
+            display: grid;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #ensino { 
+            border: 5px double black;
+        }
+
+        .reposta { 
+            border: 5px double black;
+        }
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+        #exemplo{
+            color: rgb(35, 72, 105);
+        }
+
+        hr {
+            border-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Parágrafos no HTML</h1> 
+    <hr>
+
+    <div class="container">
+        <div id="ensino">
+            <h3 style="font-size: 30px;">Parágrafos</h3>
+            <p>Você não pode ter certeza de como o HTML será exibido. <br>
+                Telas grandes ou pequenas e janelas redimensionadas criarão resultados diferentes.<br>
+                Com HTML, você não pode alterar a exibição adicionando espaços ou linhas extras em seu código HTML.<br>
+                O navegador removerá automaticamente quaisquer espaços e linhas extras quando a página for exibida:</p>
+                <hr>
+            <p id="exemplo">&lt;p>
+                This paragraph<br>
+                contains a lot of lines<br>
+                in the source code,<br>
+                but the browser<br>
+                ignores it.<br>
+                &lt;/p>
+                
+                &lt;p>
+                This paragraph<br>
+                contains         a lot of spaces<br>
+                in the source         code,<br>
+                but the        browser<br>
+                ignores it.<br>
+                &lt;/p></p>
+        </div>
+
+        <div id="resposta">
+            <p><strong>Ficará assim, ignorando toda a formatação escrita no código:</strong></p>
+                <p id="exemplo">
+                This paragraph
+                contains a lot of lines
+                in the source code,
+                but the browser
+                ignores it.
+                </p>
+                
+                <p id="exemplo">
+                This paragraph
+                contains         a lot of spaces
+                in the source         code,
+                but the        browser
+                ignores it.
+                </p>
+        </div>
+    </div>
+<br>
+    <div class="container">
+        <div id="ensino">
+            <h3 style="font-size: 30px;">Quebras de linha HTML</h3>
+            <p>O elemento HTML &lt;br> define uma quebra de linha. Use &lt;br> se desejar uma quebra de linha (uma nova linha) sem <br> 
+                iniciar um novo parágrafo:</p>
+            <hr>
+            <p>  &lt;p>This is &lt;br> a paragraph &lt;br> with line breaks.&lt;/p></p>
+        </div>
+    
+
+        <div id="resposta">
+            <p><strong>Ficará assim:</strong></p>
+            <p>This is<br>a paragraph<br>with line breaks.</p>
+        </div>
+    </div>
+<br>
+    <div class="container">
+        <div id="ensino">
+            <h3 style="font-size: 30px;">O elemento HTML &lt;pre></h3>
+            <p>O elemento HTML &lt;pre> define texto pré-formatado.<br> 
+            O Texto dentro de um &lt;pre> elemento é exibido em uma fonte de largura fixa (geralmente Courier) e preserva espaços e quebras de linha:</p>
+            <hr>
+            <p id="exemplo">&lt;pre>
+                My Bonnie lies over the ocean.<br> 
+                <br> 
+                My Bonnie lies over the sea.<br> 
+                <br> 
+                My Bonnie lies over the ocean.<br> 
+                <br> 
+                Oh, bring back my Bonnie to me.<br> 
+                &lt;/pre></p>
+        </div>
+    
+
+        <div id="resposta">
+            <p><strong>Ficará assim:</strong></p>
+            <pre>
+                My Bonnie lies over the ocean.
+              
+                My Bonnie lies over the sea.
+              
+                My Bonnie lies over the ocean.
+              
+                Oh, bring back my Bonnie to me.
+              </pre> 
+        </div>
+    </div>
+<hr>
+
+</body>
+
+</html>

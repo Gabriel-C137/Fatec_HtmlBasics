@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <style>
+        h1 {
+            font-family: 'Lucida Sans';
+        }
+
+        .container {
+            display: grid;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #ensino { 
+            border: 5px double black;
+        }
+
+        #reposta { 
+            border: 5px double black;
+        }
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+        #exemplo{
+            color: rgb(35, 72, 105);
+        }
+
+        hr {
+            border-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Styles no HTML</h1> 
+    <hr>
+
+    <div class="container">
+        <div id="ensino">
+            <h3 style="font-size: 30px;">Background-color</h3>
+            <p>A background-color propriedade CSS define a cor de fundo de um elemento HTML.</p>
+                <hr>
+            <p> Dentro da tag body, coloque: </p>
+            <p id="exemplo">
+                <br> &lt;body style="background-color:powderblue;"><br> 
+                <br>
+                &lt;/body></p>
+
+                <p>OU</p>
+
+                <p id="exemplo">&lt;p style="background-color:tomato;">e no parágrafo&lt;/p></p>
+        </div>
+
+        <br>
+
+        <div id="resposta" style="background-color:powderblue;">
+            <p>Background-color aplicado - versão 1</p>
+        </div>
+        <div id="resposta">
+            <h1 style="background-color:rgb(55, 67, 68);">Aplicando cor de fundo no título</h1>
+            <p style="background-color:tomato;">e no parágrafo</p>
+        </div>
+    </div>
+
+<br>
+<hr>
+<br>
+    <div class="container">
+        <div id="ensino">
+            <h3>Cor de texto</h3>
+            <p>A color propriedade CSS define a cor do texto para um elemento HTML:</p>
+            <hr>
+            <p id="exemplo">&lt;h1 style="color:blue;">This is a heading&lt;/h1><br>
+                &lt;p style="color:red;">This is a paragraph.&lt;/p></p>
+        </div>
+
+        <br>
+
+        <div id="resposta">
+            <h1 style="color:blue;">This is a heading</h1>
+            <p style="color:red;">This is a paragraph.</p>
+        </div>
+    </div>
+<br>
+<hr>
+<br>
+        <div class="container">
+            <div id="ensino">
+                <h3>Fontes</h3>
+                <p>A propriedade CSS font-family define a fonte a ser usada para um elemento HTML:</p>
+                <hr>
+                <p id="exemplo">&lt;h1 style="font-family:verdana;">This is a heading&lt;/h1><br>
+                    &lt;p style="font-family:courier;">This is a paragraph.&lt;/p></p>
+            </div>
+    
+            <br>
+    
+            <div id="resposta">
+                <h1 style="font-family:verdana;">This is a heading</h1>
+                <p style="font-family:courier;">This is a paragraph.</p>
+            </div>
+        </div>
+<br>
+<hr>
+<br>
+        <div class="container">
+            <div id="ensino">
+                <h3>Tamanho do texto</h3>
+                <p>A font-size propriedade CSS define o tamanho do texto para um elemento HTML:</p>
+                <hr>
+                <p id="exemplo">
+                    &lt;h1 style="font-size:300%;">This is a heading&lt;/h1><br>
+                    &lt;p style="font-size:160%;">This is a paragraph.&lt;/p>
+                </p>
+            </div>
+            
+            <br>
+            
+            <div id="resposta">
+                <h1 style="font-size:300%;">This is a heading</h1>
+                <p style="font-size:160%;">This is a paragraph.</p>
+            </div>
+        </div>
+<br>
+<hr>
+<br>
+        <div class="container">
+            <div id="ensino">
+                <h3>Tamanho do texto</h3>
+                <p>A text-align propriedade CSS define o alinhamento horizontal do texto para um elemento HTML:</p>
+                <hr>
+                <p id="exemplo">
+                    &lt;h1 style="text-align:center;">Centered Heading&lt;/h1><br>
+                    &lt;p style="text-align:end;">Centered paragraph.&lt;/p>
+                </p>
+            </div>
+                    
+            <br>
+                    
+            <div id="resposta">
+                <h1 style="text-align:center;">Centered Heading</h1>
+                <p style="text-align:end;">Centered paragraph.</p>
+            </div>
+        </div>
+
+</body>
+</html>

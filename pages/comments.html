@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <style>
+        h1 {
+            font-family: 'Lucida Sans';
+        }
+
+        .container {
+            display: grid;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #ensino { 
+            border: 5px double black;
+        }
+
+        #reposta { 
+            border: 5px double black;
+        }
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+        #exemplo{
+            color: rgb(35, 72, 105);
+        }
+
+        hr {
+            border-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Comments</h1>
+    <hr>
+
+    <div class="container">
+        <div id="ensino">
+            <h3>Etiqueta de comentário HTML</h3>
+            <p>Os comentários podem ser usados ​​para ocultar partes no meio do código HTML.</p>
+            <p>Observe que há um ponto de exclamação (!) na tag inicial, mas não na tag final.</p>
+            <p id="exemplo">&lt;!-- Write your comments here --></p>
+        </div>
+    </div>
+<br>
+<hr>
+<br>
+<div class="container">
+    <div id="ensino">
+        <h3>Ocultar conteúdo embutido</h3>
+        <p>Os comentários podem ser usados ​​para ocultar partes no meio do código HTML.</p>
+        <p>Ocultar uma parte de um parágrafo:</p>
+        <p id="exemplo">&lt;p>This &lt;!-- great text --> is a paragraph.&lt;/p></p>
+    </div>
+</div>
+<br>
+<hr>
+<br>
+<div class="container">
+    <div id="ensino">
+        <h3>Ocultar conteúdo</h3>
+        <p>Os comentários podem ser usados ​​para ocultar conteúdo.<br>
+            Isso pode ser útil se você ocultar o conteúdo temporariamente:</p>
+        <p id="exemplo">&lt;p>This is a paragraph.&lt;/p><br>
+            &lt;!-- &lt;p>This is another paragraph &lt;/p> --><br>
+            &lt;p>This is a paragraph too.&lt;/p></p><br>
+    </div>
+</div>
+
+
+</body>
+</html>

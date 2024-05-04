@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <style>
+        h1 {
+            font-family: 'Lucida Sans';
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 550px 550px;
+            justify-content: space-around;
+        }
+
+        #ensino { 
+            border: 5px double black;
+        }
+
+        .reposta { 
+            border: 5px double black;
+        }
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+
+        hr {
+            border-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tags Iniciais do HTML</h1>
+    <h4>Vc está pronto? &#129299;</h4>
+    <hr>
+
+    <h1>1.</h1>
+
+    <div class="container">
+        <div id="ensino">
+            <h1>Explicação:</h1>
+            <hr>
+            <h3>Título</h3>
+            <p><strong>&lt;h1&gt;</strong> - Tag que dá um título a sua página</p><br>
+            <p>Utiliza-se desta forma:</p><br>
+            <p>&lt;h1&gt;Título&lt;/h1&gt;</p>
+        </div>
+        <div id="resposta">
+            <h1>Na Página ela fica assim:</h1>
+            <hr>
+            <h1>Título</h1>
+        </div>
+    </div>
+
+    <h1>2.</h1>
+
+    <div class="container">
+        <div id="ensino">
+            <h3>Hierarquia de Títulos</h3>
+            <p>Ele é o título principal, para ir para títulos menos e depois subtítulos usamos, h1 ao h6</p><br>
+            <p id="exe">
+                &lt;h1>Título&lt;/h1><br>
+                &lt;h2>Título&lt;/h2><br>
+                &lt;h3>Título&lt;/h3><br>
+                &lt;h4>Título&lt;/h4><br>
+                &lt;h5>Título&lt;/h5><br>
+                &lt;h6>Título&lt;/h6><br></p>
+        </div>
+        <div id="resposta">
+            <h1>Título</h1>
+            <h2>Título</h2>
+            <h3>Título</h3>
+            <h4>Título</h4>
+            <h5>Título</h5>
+            <h6>Título</h6>
+        </div>
+    </div>
+
+    <h1>3.</h1>
+
+    <div class="container">
+        <div id="ensino">
+            <h3>Parágrafo</h3>
+            <p><strong>&lt;p&gt;</strong> - Tag que dá um parágrafo para sua página</p><br>
+            <p>&lt;p&gt;Parágrafo, podendo conter qualquer texto que você queira&lt;/p&gt;</p>
+            <p>&lt;p&gt;Então, seja criativo.&lt;/p&gt;</p>
+        </div>
+        <div id="resposta">
+            <p>Parágrafo, podendo conter qualquer texto que você queira</p>
+            <p>Então, seja criativo.</p><br>
+        </div>
+    </div>
+
+    <h1>4.</h1>
+
+    <div class="container">
+        <div id="ensino">
+            <h3>Links para sua página</h3>
+            <p><strong>&lt;a href=""&gt;</strong> - Aqui você pode aplicar um link associado á um texto</p><br>
+            <p>&lt;a href=""&gt;Link para site externo&lt;/a&gt;</p>
+            <p>a - link, href - refere-se</p>
+        </div>
+        
+        <div id="resposta">
+            <a href="https://www.w3schools.com/html/html_basic.asp">Link para site externo</a>
+        </div>
+    </div>
+
+    <h1>5.</h1>
+
+    <div class="container">
+        <div id="ensino">
+            <h3>Links para sua página</h3>
+            <p><strong>&lt;img src="" alt=""&gt;</strong> - Aqui você pode aplicar um link associado á um texto</p><br>    
+            <p>&lt;img src="img/joia.png" alt="emoji de joia"&gt;</p>
+            <p>img - identifica imagem, src - refere-se, alt - é uma descrição textual da imagem</p>
+        </div>
+            
+        <div id="resposta">
+            <img src="../img/joia.png" alt="emoji de joia" id="imagem">
+        </div>
+    </div>
+
+</body>
+
+</html>

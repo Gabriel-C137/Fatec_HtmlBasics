@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <style>
+        h1 {
+            font-family: 'Lucida Sans';
+            font-size: 33px
+        }
+        h3 {
+            font-size: 27px;
+        }
+
+        .container {
+            display: grid;
+            justify-content: center;
+        }
+
+        div {
+            width: 1070px;
+            height: 1300px;
+        }
+        p {
+            font-size: 20px;
+        }
+
+        #ensino { 
+            border: 5px double black;
+        }
+
+        .reposta { 
+            border: 5px double black;
+        }
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+
+        hr {
+            border-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Atributos de tags HTML</h1>
+    <h4>Vc está pronto? &#129299;</h4> 
+    <hr>
+
+    <h1>1.</h1>
+
+    <div class="container">
+        <div id="ensino">
+            <h3>Atributos</h3>
+            <p>
+                Todos os elementos HTML podem ter atributos<br>
+                Os atributos fornecem informações adicionais sobre os elementos<br>
+                Os atributos são sempre especificados na tag inicial<br>
+                Os atributos geralmente vêm em pares nome/valor como: nome="valor"<br>
+            </p>
+            <hr>
+            <h3>Atributo href</h3>
+            <p>A &lt;a> tag define um hiperlink. O href atributo especifica o URL da página para a qual o link leva:</p>
+            <p><mark><strong>&lt;a <u>href</u>="https://www.w3schools.com">Visit W3Schools &lt;/a></strong></mark></p>
+            <hr>
+            <h3>Atributo src</h3>
+            <p>A &lt;img> tag é usada para incorporar uma imagem em uma página HTML. O srcatributo especifica o caminho para a imagem a 
+                ser exibida:</p>
+            <p><mark><strong>&lt;img <u>src</u>="img_girl.jpg"></strong></mark></p>
+            <hr>
+            <h3>Os atributos de largura e altura</h3>
+            <p>A &lt;img> tag também deve conter os atributos width e height, que especificam a largura e a altura da imagem (em pixels):</p>
+            <p><mark><strong>&lt;img src="img_girl.jpg" <u>width="500"</u> <u>height="600"</u>></strong></mark></p>
+            <hr>
+            <h3>Atributo alternativo</h3>
+            <p>alt, O atributo obrigatório para a &lt;img> tag especifica um texto alternativo para uma imagem, se a imagem por algum motivo não puder ser exibida. Isso pode ser devido a uma conexão lenta, ou a um erro no srcatributo, ou se o usuário utiliza um leitor de tela.</p>
+            <p><mark><strong>&lt;img src="img_girl.jpg" <u>alt</u>="Girl with a jacket"></strong></mark></p>
+            <hr>
+            <h3>Atributo de estilo</h3>
+            <p>O style atributo é usado para adicionar estilos a um elemento, como cor, fonte, tamanho e muito mais.</p>
+            <p><mark><strong>&lt;p <u>style</u>="color:red;">This is a red paragraph.</p></strong></mark></p>
+            <hr>
+            <h3>Atributo de título</h3>
+            <p>O title atributo define algumas informações extras sobre um elemento.
+                O valor do atributo title será exibido como uma dica de ferramenta quando você passar o mouse sobre o elemento:</p>
+            <p><mark><strong>&lt;p <u>title="I'm a tooltip">This is a paragraph.</p></p></strong></mark></p>
+        </div>
+    </div>
+
+</body>
+
+</html>

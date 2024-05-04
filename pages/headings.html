@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <style>
+        h1 {
+            font-family: 'Lucida Sans';
+        }
+
+        .container {
+            display: grid;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #ensino { 
+            border: 5px double black;
+        }
+
+        .reposta { 
+            border: 5px double black;
+        }
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+
+        hr {
+            border-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Headings de tags HTML</h1> 
+    <hr>
+
+    <div class="container">
+        <div id="ensino">
+            <h3>Títulos maiores</h3>
+            <p>Cada título HTML possui um tamanho padrão. No entanto, você pode especificar o tamanho de qualquer título com o style atributo, usando a font-size propriedade CSS:</p>
+            <p>&lt;h1 style="font-size:60px;">Heading 1 &lt;/h1></p>
+        </div>
+
+        <div id="resposta">
+            <p>Ficará assim:</p>
+            <h1 style="font-size:60px;">Heading 1</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="ensino">
+            <h3>Cabeçalhos HTML</h3>
+            <p>Os títulos HTML são definidos com as tags &lt;h1> to &lt;h6>.&lt;h1>define o título mais importante. &lt;h6> define o título menos importante.</p>
+            <p>Muito importante usar títulos para mostrar a estrutura do documento.</p>
+        </div>
+
+        <div id="resposta">
+            <p>Ficará assim:</p>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+        </div>
+    </div>
+
+</body>
+
+</html>

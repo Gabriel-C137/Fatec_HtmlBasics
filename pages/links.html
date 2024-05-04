@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <style>
+        h1 {
+            font-family: 'Lucida Sans';
+        }
+
+	h3 {
+            font-size: 25px;
+        }
+
+
+        .container {
+            display: grid;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #ensino { 
+            border: 5px double black;
+        }
+
+        #reposta { 
+            border: 5px double black;
+        }
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+        #exemplo{
+            color: rgb(35, 72, 105);
+        }
+
+        hr {
+            border-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Links</h1>
+    <hr>
+
+    <div class="container">
+        <div id="ensino">
+            <h3>Links HTML - Sintaxe</h3>
+            <p>A tag HTML &lt;a> define um hiperlink. Possui a seguinte sintaxe:</p>
+            <hr>
+            <p id="exemplo"> &lt;a href="url">link text&lt;/a> </p>
+            <hr>
+            <p>O atributo mais importante do &lt;a> elemento é o href atributo, que indica o destino do link.<br>
+                O texto do link é a parte que ficará visível ao leitor.<br>
+                Clicar no texto do link enviará o leitor ao endereço URL especificado.<br></p>
+        </div>
+<br>
+        <div id="resposta">
+            <a href="url">Link Text</a> <br>
+            <p>ou</p>
+            <a href="https://www.w3schools.com/">Visit para saber mais</a>
+        </div>
+    </div>
+<br>
+<hr>
+<br>
+<div class="container">
+    <div id="ensino">
+        <h3>Links HTML - O atributo de destino</h3>
+        <p>Por padrão, a página vinculada será exibida na janela atual do navegador. Para alterar isso, você deve especificar outro destino para o link.</p>
+        <p>O target atributo especifica onde abrir o documento vinculado.</p>
+        <p>O target atributo pode ter um dos seguintes valores:</p>
+        <hr>
+        <p id="exemplo">
+            <mark>self</mark> - Padrão. Abre o documento na mesma janela/aba em que foi clicado<br>
+            <mark>blank</mark> - Abre o documento em uma nova janela ou guia<br>
+            <mark>parent</mark> - Abre o documento no quadro pai<br>
+            <mark>top</mark> - Abre o documento em todo o corpo da janela<br>
+        </p>
+        <hr>
+        <p> </p>
+    </div>
+<br>
+
+</div>
+<br>
+<hr>
+<br>
+<div class="container">
+    <div id="ensino">
+        <h3>Links HTML - Use uma imagem como link</h3>
+        <p>Para usar uma imagem como link, basta colocar a &lt;img> tag dentro da &lt;a> tag:</p>
+        <hr>
+    </div>
+<br>
+    <div id="resposta">
+        <a href="https://www.amazon.com.br/Bleach-Nirvana/dp/B00004UEHD">
+            <img src="../img/nirvana.png" alt="HTML tutorial" style="width:700px;height:750px;">
+            </a>
+    </div>
+</div>
+<br>
+<hr>
+<br>
+<div class="container">
+    <div id="ensino">
+        <h3>Link para um endereço de e-mail</h3>
+        <p>Use mail: dentro do href atributo para criar um link que abra o programa de e-mail do usuário (para permitir que ele envie um novo e-mail):</p>
+        <hr>
+        <p id="exemplo">&lt;a href="mailto:someone@example.com">Send email&lt;/a></p>
+    </div>
+</div>
+<br>
+<hr>
+<br>
+<div class="container">
+    <div id="ensino">
+        <h3>Botão como um link</h3>
+        <p>Para usar um botão HTML como link, você deve adicionar algum código JavaScript.<br>
+            JavaScript permite especificar o que acontece em determinados eventos, como o clique de um botão:<br>
+        </p>
+        <hr>
+        <p id="exemplo">&lt;button onclick="document.location='default.asp'">HTML Tutorial&lt;/button></p>
+    </div>
+
+    <div id="resposta" align="center">
+        <button onclick="document.location='default.asp'">HTML Tutorial</button>
+    </div>
+</div>
+<br>
+<hr>
+<br>
+
+</body>
+</html>

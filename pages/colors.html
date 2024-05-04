@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <style>
+        h1 {
+            font-family: 'Lucida Sans';
+        }
+        h3 {
+            font-size: 25px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 550px 550px;
+            justify-content: space-around;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #ensino { 
+            border: 5px double black;
+        }
+
+        #reposta { 
+            border: 5px double black;
+        }
+        .exe {
+            display: flex;
+            justify-content: center;
+        }
+
+        #imagem {
+            width: 230px;
+            height: 230px;
+        }
+        #exemplo{
+            color: rgb(35, 72, 105);
+        }
+
+        hr {
+            border-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cores para o seu site</h1>
+    <hr>
+    <br>
+    <div class="container">
+        <div id="ensino">
+            <h3>Cor de fundo - Background</h3>
+            <p>Você pode definir a cor de fundo dos elementos HTML:</p>
+            <hr>
+            <p id="exemplo"> 
+                &lt;h1 style="background-color:DodgerBlue;">Hello World&lt;/h1><br>
+                &lt;p style="background-color:Tomato;">Lorem ipsum...&lt;/p><br>
+            </p>
+        </div>
+
+        <div id="resposta">
+            <h1 style="background-color:DodgerBlue;">Hello World</h1>
+            <p style="background-color:Tomato;">Lorem ipsum...</p>
+        </div>
+    </div>
+<br>
+<hr>
+<br>
+<div class="container">
+    <div id="ensino">
+        <h3>Cor do texto</h3>
+        <p>Você pode definir a cor do texto:</p>
+        <hr>
+        <p id="exemplo"> 
+            &lt;h1 style="color:Tomato;">Hello World&lt;/h1><br>
+            &lt;p style="color:DodgerBlue;">Lorem ipsum...&lt;/p><br>
+            &lt;p style="color:MediumSeaGreen;">Ut wisi enim...&lt;/p><br>
+        </p>
+    </div>
+
+    <div id="resposta" style="background-color: rgb(66, 35, 42);">
+        <h1 style="color:Tomato;">Hello World</h1>
+        <p style="color:DodgerBlue;">Lorem ipsum...</p>
+        <p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+    </div>
+</div>
+<br>
+<hr>
+<br>
+<div class="container">
+    <div id="ensino">
+        <h3>Cor da borda</h3>
+        <p>Você pode definir a cor das bordas:</p>
+        <hr>
+        <p id="exemplo"> 
+            &lt;h1 style="border:2px solid Tomato;">Hello World&lt;/h1><br>
+            &lt;h1 style="border:2px solid DodgerBlue;">Hello World&lt;/h1><br>
+            &lt;h1 style="border:2px solid Violet;">Hello World&lt;/h1><br>
+        </p>
+    </div>
+
+    <div id="resposta" style="background-color: rgb(66, 35, 42);">
+        <h1 style="border:3px solid Tomato;">Hello World</h1>
+        <h1 style="border:3px solid DodgerBlue;">Hello World</h1>
+        <h1 style="border:3px solid Violet;">Hello World</h1>
+    </div>
+</div>
+
+</body>
+</html>
