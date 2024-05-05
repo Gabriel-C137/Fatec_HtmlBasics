@@ -7,7 +7,7 @@ Esse projeto tem em vista construir um site para uma faculdade ensinando tudo qu
 Se você está interessado em mergulhar no universo da criação de sites, você está no lugar certo. O HTML, ou HyperText Markup Language, é a espinha dorsal da web, e entender seus fundamentos é essencial para construir páginas web funcionais e visualmente atraentes.
 Sendo mais do que apenas um tutorial básico de HTML, é uma jornada de aprendizado projetada para levar você do básico ao avançado, preparando-o para dominar a linguagem que sustenta a internet.
 
-Se você sabe todas essas áreas, você já pode saber que sabe HTML :)
+Se você sabe todas essas áreas, você já pode dizer que sabe HTML :)
 
 ### 📋 Pré-requisitos:
 
